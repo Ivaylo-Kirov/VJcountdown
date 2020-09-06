@@ -4,9 +4,10 @@ const hoursEl = document.querySelector('#hours');
 const minutesEl = document.querySelector('#minutes');
 const secondsEl = document.querySelector('#seconds');
 
-function countdown() {
+const newYearsEve = new Date("01/01/2021");
 
-    const newYearsEve = new Date("01/01/2021");
+function countdown() {
+    
     const currDate = new Date();
 
     const seconds = Math.floor((newYearsEve - currDate) / 1000) % 60;
@@ -18,7 +19,6 @@ function countdown() {
     hoursEl.innerHTML = hours;
     minutesEl.innerHTML = minutes;
     secondsEl.innerHTML = seconds;
-
 
 }
 
