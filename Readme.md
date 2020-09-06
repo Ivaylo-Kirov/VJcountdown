@@ -1,0 +1,1 @@
+Only challenge really is figuring out the divisions and modulus to get the various values. The default date subtraction in JavaScript returns milliseconds.
